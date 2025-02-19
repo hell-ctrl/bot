@@ -1,4 +1,11 @@
 {
   "name": "bot",
-  "packageManager": "yarn@4.6.0"
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "baileys": "^6.7.13",
+    "cli-color": "^2.0.4",
+    "pino": "^9.6.0"
+  }
 }
