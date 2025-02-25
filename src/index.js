@@ -6,7 +6,7 @@ async function start() {
   const sock = await connectToWhatsApp();
 
   sock.ev.on("connection.update", update => connectionUpdate(update, start));
-  sock.ev.on("messages.upsert", messages => messagesUpsert(messages));
+  sock.ev.on("messages.upsert", message => messagesUpsert(sock, message));
 }
 
 start();
