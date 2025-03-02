@@ -1,7 +1,7 @@
 const webp = require("node-webpmux");
 
 async function addStickerMetaData(mediaPath, metadata) {
-  const tmpFolderIn = "./temp/";
+  const tmpFolderIn = "./src/temp/";
   const tmpFileOut = `${tmpFolderIn}nsticker.webp`;
 
   if (metadata.packname || metadata.author) {
