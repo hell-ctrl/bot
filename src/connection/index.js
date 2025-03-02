@@ -14,7 +14,7 @@ const rl = readline.createInterface({
 const question = (text) => new Promise((resolve) => rl.question(text, resolve));
 
 async function connectToWhatsApp() {
-  let { state, saveCreds } = await useMultiFileAuthState("./connection/auth");
+  let { state, saveCreds } = await useMultiFileAuthState("./src/connection/auth");
   let { version } = await fetchLatestBaileysVersion();
 
   const sock = makeWASocket({
