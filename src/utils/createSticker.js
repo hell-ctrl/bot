@@ -6,7 +6,7 @@ const addStickerMetaData = require("./addStickerMetaData.js");
 async function createSticker(buffer, options) {
   const randomId = `${Math.random().toString(36).substring(2, 10)}`;
 
-  const tempFolderPath = "./temp/";
+  const tempFolderPath = "./src/temp/";
   const inputFile = `${tempFolderPath}${randomId}.webp`;
   const outputFile = `${tempFolderPath}sticker_${randomId}.webp`;
 
